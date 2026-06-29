@@ -41,6 +41,8 @@
 #     print(damage)
 # take_damage(30)
 # print(health)
+#5
+#אני מקבל פעמיים הדפסה גם של מה שבחוץ ןגם את מה שבפנים
 items = ["map", "key"]
 def add_items():
     items.append("torch")
