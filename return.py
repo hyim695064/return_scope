@@ -63,11 +63,26 @@
 #7
 #מדפיס פעמיים 20 מכיוון שבתוך הפונקציה אני מצביע לגלובל 
 #ןאז הוא דןרס אותו עם השינוי
-points = 3
-def add_points():
-    global points
-    points = points + 7
-    points = points * 2
-    print(points)
-add_points()
-print(points)
+# points = 3
+# def add_points():
+#     global points
+#     points = points + 7
+#     points = points * 2
+#     print(points)
+# add_points()
+# print(points)
+#8
+#הראשון הוא מדפיס את ,רץ, כי הוא ההדפסה הראשונה ץהשני הוא מדפיס לי את 
+#,מוכן, כי זה ההדפסה השניה וזה מה שהגדרתי לו ץ השלישי הוא חוזר לגלובלי 
+#ומדפיס אותו
+status = "waiting"
+def outer():
+    status = "ready"
+    
+    def inner():
+        status = "running"
+        print(status)
+    inner()
+    print(status)
+outer()
+print(status)
