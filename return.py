@@ -43,10 +43,20 @@
 # print(health)
 #5
 #אני מקבל פעמיים הדפסה גם של מה שבחוץ ןגם את מה שבפנים
+# items = ["map", "key"]
+# def add_items():
+#     items.append("torch")
+#     items.append("coin")
+#     print(items)
+# add_items()
+# print(items)
+#6
+#פעם אחת מדפיס לי רק את מה שבפוקציה מכיוון שהפעם הגדרתי אותו בפנים
+#פעם שניה מדפיס לי את מה שבחוץ
 items = ["map", "key"]
-def add_items():
-    items.append("torch")
-    items.append("coin")
+def replace_items():
+    items = ["potion"]
+    items.append("shield")
     print(items)
-add_items()
+replace_items()
 print(items)
