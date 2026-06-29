@@ -53,10 +53,21 @@
 #6
 #פעם אחת מדפיס לי רק את מה שבפוקציה מכיוון שהפעם הגדרתי אותו בפנים
 #פעם שניה מדפיס לי את מה שבחוץ
-items = ["map", "key"]
-def replace_items():
-    items = ["potion"]
-    items.append("shield")
-    print(items)
-replace_items()
-print(items)
+# items = ["map", "key"]
+# def replace_items():
+#     items = ["potion"]
+#     items.append("shield")
+#     print(items)
+# replace_items()
+# print(items)
+#7
+#מדפיס פעמיים 20 מכיוון שבתוך הפונקציה אני מצביע לגלובל 
+#ןאז הוא דןרס אותו עם השינוי
+points = 3
+def add_points():
+    global points
+    points = points + 7
+    points = points * 2
+    print(points)
+add_points()
+print(points)
