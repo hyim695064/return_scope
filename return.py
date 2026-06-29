@@ -22,10 +22,29 @@
 #3
 #זה הדפיס לי 30 מכיוון שבתןך הפרמ היה 5 והוספתי 10 והכפלתי ב2 
 #והשני פשןט מדפיס את הגלןבל
-coins = 20 
-def mission_reward(coins):
-    coins = coins +10
-    coins = coins * 2
-    print(coins)
-mission_reward(5)
-print(coins)
+# coins = 20 
+# def mission_reward(coins):
+#     coins = coins +10
+#     coins = coins * 2
+#     print(coins)
+# mission_reward(5)
+# print(coins)
+#4
+#מדפיס לי את הערך של בריא בתוך הפונקציה וגם את הערך של נזק בפונקציה 
+#ובחוץ את הערך הגלןבלי של בריא
+# health = 100
+# def take_damage(damage):
+#     health = 100
+#     health = health - damage
+#     damage = damage + 5
+#     print(health)
+#     print(damage)
+# take_damage(30)
+# print(health)
+items = ["map", "key"]
+def add_items():
+    items.append("torch")
+    items.append("coin")
+    print(items)
+add_items()
+print(items)
