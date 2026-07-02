@@ -75,14 +75,31 @@
 #הראשון הוא מדפיס את ,רץ, כי הוא ההדפסה הראשונה ץהשני הוא מדפיס לי את 
 #,מוכן, כי זה ההדפסה השניה וזה מה שהגדרתי לו ץ השלישי הוא חוזר לגלובלי 
 #ומדפיס אותו
-status = "waiting"
-def outer():
-    status = "ready"
+# status = "waiting"
+# def outer():
+#     status = "ready"
     
+#     def inner():
+#         status = "running"
+#         print(status)
+#     inner()
+#     print(status)
+# outer()
+# print(status)
+
+coins = 10
+#ההדפסה הראשונה והשניה מקבל 16 מכייון שהם משתמשים במשתנה מטבעות השני
+#וההדפסה השלישית פשוט מקבלת 10 כמו המשתנה הראשון
+def outer():
+    coins = 5
+
     def inner():
-        status = "running"
-        print(status)
+        nonlocal coins 
+        coins = coins + 3
+        coins = coins * 2
+        print(coins)
     inner()
-    print(status)
+    print(coins)
+
 outer()
-print(status)
+print(coins)
