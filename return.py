@@ -90,16 +90,39 @@
 coins = 10
 #ההדפסה הראשונה והשניה מקבל 16 מכייון שהם משתמשים במשתנה מטבעות השני
 #וההדפסה השלישית פשוט מקבלת 10 כמו המשתנה הראשון
+# def outer():
+#     coins = 5
+
+#     def inner():
+#         nonlocal coins 
+#         coins = coins + 3
+#         coins = coins * 2
+#         print(coins)
+#     inner()
+#     print(coins)
+
+# outer()
+# print(coins)
+score = 1
+bag = ["key"]
+#שניההדפסות הראשונות עושות את אותו הדבר השלישי בסך הכל מדפיס 1
+#כמו בגלובל , מה שלא משתנה זה ההדפסה של שקית מכיוון שלא הגדרתי את זה
+#עוד פעם רק בגלובל אז כל הוספה הולכת לגלובל 
 def outer():
-    coins = 5
+    score = 10 
+    bag.append("map")
 
     def inner():
-        nonlocal coins 
-        coins = coins + 3
-        coins = coins * 2
-        print(coins)
+        nonlocal score
+        score = score + 5
+        bag.append("coin")
+        print(score)
+        print(bag)
+    score = score * 2
     inner()
-    print(coins)
+    print(score)
+    print(bag)
 
 outer()
-print(coins)
+print(score)
+print(bag)
