@@ -135,14 +135,19 @@ coins = 10
 #     return f"Robot moved {centimeters} centimeters"
 # print(return_centim(count_distance(5)))
 
-def store_price(price):
-    new_price = price + 10
-    return new_price
-def return_price(price):
-    newest_price = price * 2
-    return newest_price
-print(return_price(store_price(50)))
+# def store_price(price):
+#     new_price = price + 10
+#     return new_price
+# def return_price(price):
+#     newest_price = price * 2
+#     return newest_price
+# print(return_price(store_price(50)))
 
+def first_last_name(name, family):
+    return f"{name} {family}"
+def upper_name(name):
+    return name.upper()
+print(upper_name(first_last_name("moshe", "levi")))
 
 
 
